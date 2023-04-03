@@ -1,0 +1,8 @@
+class Episode {
+  final String title, rating, date, id;
+  Episode.fromJson(Map<String, dynamic> json)
+      : title = json["title"],
+        rating = json["rating"],
+        date = json["date"],
+        id = json["id"];
+}
